@@ -45,9 +45,10 @@
     init: function () {
       window.addEventListener('hashchange', index.hashRoute)
 
-      insertStylesheet('http://amio.github.io/gh-index/index.css')
-      // insertStylesheet('index.css')
-      insertStylesheetAsync('https://octicons.github.com/components/octicons/octicons/octicons.css')
+      // insertStylesheet('http://amio.github.io/gh-index/index.css')
+      insertStylesheet('index.css')
+      // insertStylesheetAsync('https://octicons.github.com/components/octicons/octicons/octicons.css')
+      insertStylesheetAsync('https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css');
       window.fetch || insertScript('https://cdn.jsdelivr.net/fetch/0.9.0/fetch.min.js')
 
       index.loadTrees()
