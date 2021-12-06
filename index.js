@@ -3,7 +3,7 @@
  * An directory index for gh-pages.
  */
 
-window.addEventListener('DOMContentLoaded', () => {
+ window.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.getElementById('gh-index')
 
   function insertStylesheet (url) {
@@ -45,9 +45,9 @@ window.addEventListener('DOMContentLoaded', () => {
     init: function () {
       window.addEventListener('hashchange', index.hashRoute)
 
-      //insertStylesheet('http://amio.github.io/gh-index/index.css')
-      insertStylesheet('index.css')
-      insertStylesheetAsync('https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css');
+      insertStylesheet('http://amio.github.io/gh-index/index.css')
+      // insertStylesheet('index.css')
+      insertStylesheetAsync('https://octicons.github.com/components/octicons/octicons/octicons.css')
       window.fetch || insertScript('https://cdn.jsdelivr.net/fetch/0.9.0/fetch.min.js')
 
       index.loadTrees()
